@@ -9,14 +9,14 @@ Note: In order to use the API, you will need a paid QuestionDB account.
 
 Making a request
 ----------------
-There's a single endpoint to query for now: `https://questiondb.com/api/questions/(your keyword string)` that supports GET requests.
+There's a single endpoint to query for now: `https://questiondb.io/api/questions/(your keyword string)` that supports GET requests.
 
 To make a request, you'll need to pass your username:password with each request.
 
 For example, here's a request to get questions that are related to "protein powder":
 
 ```shell
-curl -u username:password -i https://questiondb.com/api/questions/protein%20powder
+curl -u username:password -i https://questiondb.io/api/questions/protein%20powder
 ```
 
 A successful response will look something like:
