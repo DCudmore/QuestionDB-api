@@ -29,17 +29,27 @@ Server: Werkzeug/0.14.1 Python/3.5.5
 Date: Mon, 26 Nov 2018 23:53:16 GMT
 
 {
-  "data":[
-  ["healthy protein shake without expensive protein powder","https://www.reddit.com/r/EatCheapAndHealthy/comments/6tm3wt/healthy_protein_shake_without_expensive_protein/","158"],
-  ["good protein powder besides isopure","https://www.reddit.com/r/ketogains/comments/9ap1r3/good_protein_powder_besides_isopure_difficulty/","116"],
-  ["mixing black coffee and protein powder","https://www.reddit.com/r/Fitness/comments/4fna8d/mixing_black_coffee_and_protein_powder/","110"],
-  ...]
+ "data":[
+  {
+  "source":"https://www.reddit.com/r/EatCheapAndHealthy/comments/6tm3wt/healthy_protein_shake_without_expensive_protein/",
+  "num_comments":"158",
+  "question":"healthy protein shake without expensive protein powder"
+  },
+  {
+  "source":"https://www.reddit.com/r/ketogains/comments/9ap1r3/good_protein_powder_besides_isopure_difficulty/",
+  "num_comments":"116",
+  "question":"good protein powder besides isopure"
+  },
+ ...]
 }
 ```
 
-Questions are sorted in order of popularity in the "data" array.
+Questions are sorted in order of popularity (number of comments) in the "data" array.
 
-Each question is its own array consisting of `[question, source_url, number_of_comments_in_source]`.
+Each question is its own object with the following keys:
+* "question" - The question string.
+* "source" - The URL where the original question is from.
+* "num_comments" - The number of comments in the source.
 
 Feature Requests and Feedback
 -----------------------------
