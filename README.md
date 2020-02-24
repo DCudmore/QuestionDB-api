@@ -11,7 +11,7 @@ There's a single endpoint to query for now: `https://questiondb.io/api/questions
 
 To make a request, you'll need to pass your API key in the header with a key value of "Api-Key". You can get your API key from your account panel in QuestionDB.
 
-For example, here's a request to get questions that are related to "protein powder":
+For example, here's a request to get questions that are related to "protein powder", just replace {yourApiKeyHere} with your actual API key (without the curly braces):
 
 ```shell
 curl -i https://questiondb.io/api/questions/protein%20powder -H "Api-Key:{yourApiKeyHere}"
