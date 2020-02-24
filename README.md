@@ -9,12 +9,12 @@ Making a request
 ----------------
 There's a single endpoint to query for now: `https://questiondb.io/api/questions/(your keyword string)` that supports GET requests.
 
-To make a request, you'll need to pass your username:password with each request.
+To make a request, you'll need to pass your API key in the header with a key value of "Api-Key". You can get your API key from your account panel in QuestionDB.
 
 For example, here's a request to get questions that are related to "protein powder":
 
 ```shell
-curl -i https://questiondb.io/api/questions/protein%20powder
+curl -i https://questiondb.io/api/questions/protein%20powder -H "Api-Key:{yourApiKeyHere}"
 ```
 
 A successful response will look something like:
