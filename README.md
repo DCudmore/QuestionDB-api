@@ -7,14 +7,17 @@ From there, integrate the results with your internal process or tool however you
 
 Making a request
 ----------------
-There's a single endpoint to query for now: `https://questiondb.io/api/questions/(your keyword string)` that supports GET requests.
+There's a single endpoint to query: `https://questiondb.io/api/questions/<your keyword string>` that supports GET requests.
 
-To make a request, you'll need to pass your API key in the header with a key value of "Api-Key". You can get your API key from your account panel in QuestionDB.
+There are 2 arguments you can pass in the request header:
 
-For example, here's a request to get questions that are related to "protein powder", just replace {yourApiKeyHere} with your actual API key (without the curly braces):
+* (Required) API Key - To make a request, you'll need to pass your API key in the header with a key value of `Api-Key`. You can get your API key from your account panel in QuestionDB.
+* (Optional) Strict search value - By default, QuestionDB uses fuzzy search based on Levenshtein Distance. Usually it's useful, but sometimes you'll need to get only questions with your keyword in it. In that case, add a header of `strict:true`.
+
+For example, here's a request to get questions that are related to "protein powder", just replace {yourApiKeyHere} with your actual API key (without the brackets):
 
 ```shell
-curl -i https://questiondb.io/api/questions/protein%20powder -H "Api-Key:{yourApiKeyHere}"
+curl -i https://questiondb.io/api/questions/protein%20powder -H "Api-Key:<yourApiKeyHere>" -H "strict:true"
 ```
 
 A successful response will look something like:
