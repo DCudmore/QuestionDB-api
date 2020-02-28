@@ -1,7 +1,7 @@
 The QuestionDB API
 ====================
 
-The API is pretty straightforward to use, and lets you fetch search results for a keyword. 
+The [QuestionDB](https://questiondb.io/) API is pretty straightforward to use, and lets you fetch search results for a keyword. 
 
 From there, integrate the results with your internal process or tool however you'd like.
 
