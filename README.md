@@ -34,13 +34,17 @@ Date: Mon, 24 Feb 2020 23:53:16 GMT
   {
   "source":"https://www.reddit.com/r/EatCheapAndHealthy/comments/6tm3wt/healthy_protein_shake_without_expensive_protein/",
   "num_comments":"158",
-  "question":"healthy protein shake without expensive protein powder"
+  "question":"healthy protein shake without expensive protein powder",
+  "keyword_data"
   },
   {
   "source":"https://www.reddit.com/r/ketogains/comments/9ap1r3/good_protein_powder_besides_isopure_difficulty/",
   "num_comments":"116",
   "question":"good protein powder besides isopure"
   },
+ ...],
+ "keyword_data":[
+  "new protein powder taste nasty","healthy protein shake expensive protein powder","protein powder natural sweetener","protein powder isopure","brand whey protein powder"
  ...]
 }
 ```
