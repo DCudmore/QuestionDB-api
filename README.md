@@ -43,7 +43,7 @@ Date: Mon, 24 Feb 2020 23:53:16 GMT
   "question":"good protein powder besides isopure"
   },
  ...],
- "keyword_data":[
+ "keywords":[
   "new protein powder taste nasty","healthy protein shake expensive protein powder","protein powder natural sweetener","protein powder isopure","brand whey protein powder"
  ...]
 }
